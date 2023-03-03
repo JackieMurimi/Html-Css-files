@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premac Care</title>
+    <style>
+      body {
+        background-color: #eae7e2;
+      }
+      h1,
+      h2 {
+        font-weight: 950;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+      h1 {
+        color: #97592a;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #c0b2a7;
+        padding: 0 0 24px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        size: 10px;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        text-decoration: none;
+      }
+      li {
+        margin: 0 15px;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #c0b2a7;
+        border: 1px solid #97592a;
+        color: #97592a;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: none;
+      }
+      button:hover {
+        color: #fff;
+        background: #97592a;
+      }
+      .email {
+        color: #97592a;
+        margin: 0;
+      }
+      .instagram {
+        color: #97592a;
+      }
+      .contact-details {
+        color: black;
+        text-align: center;
+        font-size: 13px;
+      }
+      .contact-place {
+        color: #97592a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Premac Care</h1>
+    <p><em>We care</em></p>
+    <img
+      src="https://imageio.forbes.com/specials-images/imageserve/6117af8b679cc9098dd4eb2e/Adult-hands-holding-older-hands-showing-the-importance-of-caregiving-/960x0.jpg?format=jpg&width=960"
+      alt=""
+    />
+    <hr />
+    <h2>Our services include:</h2>
+    <ul>
+      <li>
+        <strong>Overnight care</strong
+        ><span>
+          : For people who need help during the bedtime routine,<br />
+          overnight hours and in the morning</span
+        >
+      </li>
+      <li>
+        <strong>24 hour care</strong
+        ><span>
+          : Around the clock care ensuring safety and comfort at all times</span
+        >
+      </li>
+      <li>
+        <strong>Live-in -Care</strong
+        ><span>
+          : Ensuring dignity and quality of life for seniors and adults with
+          disabilities</span
+        >
+      </li>
+      <li>
+        <strong>Post-surgery and rehab care</strong
+        ><span>
+          : 24 hour or as needed homecare so you can recover in the comfort of
+          your home</span
+        >
+      </li>
+    </ul>
+    <button>Contact us</button>
+    <p>
+      Like and follow us on
+      <a
+        href="https://www.instagram.com/premac_care/"
+        target="_blank"
+        class="free"
+      >
+        Instagram</a
+      >
+    </p>
+    <div class="contact-details">
+      <span class="contact-place">Email:</span>
+      Premaccare@gmail.com
+      <span class="contact-place">Instagram:</span>
+      @premac_care
+    </div>
+    <script>
+      function contactButton() {
+        let name = prompt("What is your name?");
+        let language = prompt("What is your preferred language?");
+
+        if (language === "English") {
+          alert(
+            "Hello" +
+              " " +
+              name +
+              ", one of our agents will contact you shortly"
+          );
+        } else {
+          alert("Hujambo" + " " + name + "tutawasiliana nawe hivi punde");
+        }
+      }
+      let contactUs = document.querySelector("button");
+      contactUs.addEventListener("click", contactButton);
+    </script>
+  </body>
+</html>
